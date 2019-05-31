@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Upload PHP com barra de progresso</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="upload">
+
+                <h1>Upload de arquivos</h1>
+
+                <form id="formFiles" name="formFiles" action="javascript:void(0);" enctype="multipart/form-data">
+                    <input type="file" name="file" required>
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <div id="return"></div>
+
+                <div id="progressBar">
+                    <span></span>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <script async src="script.js"></script>
+
+    </body>
+</html>
