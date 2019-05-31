@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Player</title>
+        <link rel="stylesheet" type="text/css" href="styles/reset.css">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="fonts/css/ionicons.css">
+        <script src="scripts/player.js"></script>
+    </head>
+    <body>
+
+        <div class="conteiner">
+            <div class="player-video" onmouseover="selectPlayer(this)">
+
+                <!-- VÍDEO -->
+                <video src="http://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" type="video/mp4">
+    
+                </video>
+
+                <!-- LOADER -->
+                <div class="loader">
+                    <span class="ion-load-d"></span>
+                </div>
+
+                <!-- BARRA DE CONTROLES -->
+                <div class="controls">
+
+                    <!-- BARRA DE PROGRESSO -->
+                    <div class="progress-bar">
+                        <div class="video-loaded"></div>
+                        <div class="video-progress">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <!-- BOTÃO PLAY -->
+                    <div class="control left play">
+                        <!-- ion-pause -->
+                        <span class="ion-play"></span>
+                    </div>
+
+                    <!-- BOTÃO MUTE -->
+                    <div class="control left audio">
+                        <!-- ion-volume-mute -->
+                        <!-- ion-volume-low -->
+                        <span class="ion-volume-medium"></span>
+
+
+                    </div>
+
+                    <!-- SLIDER -->
+                    <div class="slider">
+                        <div class="back">
+                            <div class="bar">
+                                <span></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- TIME -->
+                    <div class="left time">
+                        <div class="time-video">00:00 | 00:00</div>
+                    </div>
+
+                   
+                     <!-- FULLSCREEN -->
+                    <div class="control right full">
+                        <!-- ion-arrow-shrink -->
+    
+                        <span class="ion-arrow-expand"></span>
+                    </div>
+
+                    <!-- LINK -->
+                    <div class="control right link">
+                        <a title="Ir para" href="#">
+                            <!-- ion-android-download -->
+                            <span class="ion-share"></span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        
+       
+    </body>
+</html>
