@@ -42,18 +42,21 @@
                 case 'escurecer':
                     document.body.style.backgroundColor = '#047751';
                     break;
+                case 'meu site':
+                    window.location.href = 'https://www.jetersonlordano.com.br';
+                    break;
             }
 
             if (resultSpeak.match(/buscar por/)) {
 
                 resultSpeaker.innerHTML = 'Redirecionando...';
-                
-                setTimeout(function(){
-                    
+
+                setTimeout(function () {
+
                     var resultado = resultSpeak.split('buscar por');
                     window.location.href = 'https://www.google.com.br/search?q=' + resultado[1];
-                    
-                },2000);
+
+                }, 2000);
             }
 
         }, false);
